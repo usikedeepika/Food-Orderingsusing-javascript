@@ -1,8 +1,220 @@
-<html>
-    <head>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="my-body">
+  <section class="container">
+    <div id="sidebar">
+      <div class="intro">
+         <div class="logo">
+          <img src="https://surjeet-food-ordering-system.netlify.app/img/%E2%80%94Pngtree%E2%80%94javanese%20character%20with%20blangkon%20holding_8999487%201.png" alt="image">
+         </div>
+          <p id="slogan">Eat well, live well!</p>
+      </div>
+      <hr>
+      <div class="navbar">
+        <h3 style="text-align: center;margin-top: 5px;">Quick Links</h3>
+          <nav>
+            <ol type="1">
+              <li><a href="#" onclick="showScreen('screen1')">Home</a></li>
+              <li><a href="#" onclick="showScreen('screen1')">Your Order</a></li>
+              <li><a href="#" onclick="showScreen('screen1')">Wallet</a></li>
+              <li><a href="#" onclick="showScreen('screen1')">Profile</a></li>
+              <li><a href="#" onclick="showScreen('screen1')">Logout</a></li>
+              <li><a href="#" onclick="showScreen('screen2')">Menu</a></li>
 
-        <script src="index.js"></script>
-    </body>
+            </ol>
+          </nav>
+      </div>
+     <hr>
+      <div class="about">
+        <nav>
+        <ol type="1">
+          <li><a href="#">Our Blog</a></li>
+          <li><a href="#">Upcoming Dishes</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Social Media Links</a></li>
+          <li><a href="#">Logout</a></li>
+          <li><a href="#">Menu</a></li>
+        </ol>
+      </nav>
+   </div>
+    </div>
+
+    <!--Main Content-->
+
+    <div id="main-content">
+      <div class="head-nav">
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Search for Food Item..." onkeyup="searchItems()">
+          </div>
+        <div class="register">
+          <div><button class="sign-up">SignUp</button></div>
+           <div><button class="login">Login</button></div>
+          <div><img src="https://surjeet-food-ordering-system.netlify.app/img/%E2%80%94Pngtree%E2%80%94javanese%20character%20with%20blangkon%20holding_8999487%201.png" alt="image" id="my-image"></div> 
+        </div>
+      </div>
+
+      
+      <div id="info-container">
+ 
+
+        <div id="screen1" class="screen" style="display: block;">
+          <img src="https://surjeet-food-ordering-system.netlify.app/img/Screenshot%202023-07-14%20at%2011.14%201.png">
+
+               
+      <div class="heading"><h2>Menu</h2></div>
+      <div class="menu-container" id="menu-list">
+
+      
+        <div class="menu-item">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.NgXppeeT7A6iHrxvESE9RwHaHa&pid=Api&P=0&h=220" alt="img1">
+          <h3>Lemon Rice</h3>
+          <div class="item-details">
+              <div class="price">Rs.80</div>
+              <div><a href="#" class="add-btn">+</a></div>
+          </div>
+      </div>
+            
+        
+      
+      <div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.47qNztDdtWodO4SPk4-fKAHaE8&pid=Api&P=0&h=220" alt="img2">
+        <h3>Manchuria</h3>
+        <div class="item-details">
+            <div class="price">Rs.100</div>
+            <div><a href="#" class="add-btn">+</a></div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.vqJz6RMCDPKFWiwop-B4LAHaHa&pid=Api&P=0&h=220" alt="img3">
+      <h3>Curd Rice</h3>
+      <div class="item-details">
+          <div class="price">Rs.200</div>
+          <div><a href="#" class="add-btn">+</a></div>
+      </div>
+  </div>
+
+
+  <div class="menu-item">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.OZny5F6g0QAQPLsU_4HnEAHaE8&pid=Api&P=0&h=220" alt="img4">
+    <h3>Cheeseburger</h3>
+    <div class="item-details">
+        <div class="price">Rs.150</div>
+        <div><a href="#" class="add-btn">+</a></div>
+    </div>
+</div>
+
+
+<div class="menu-item">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.LUdVB3scfT1YPgs2vHchhQHaE8&pid=Api&P=0&h=220" alt="img5">
+  <h3>Chicken Biryani</h3>
+  <div class="item-details">
+      <div class="price">Rs.150</div>
+      <div><a href="#" class="add-btn">+</a></div>
+  </div>
+</div>
+      
+
+<div class="menu-item">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.xHv59Rk5PzRGoa1fT2-KOAHaEc&pid=Api&P=0&h=220" alt="img6">
+  <h3>Rasagulla</h3>
+  <div class="item-details">
+      <div class="price">Rs.150</div>
+      <div><a href="#" class="add-btn">+</a></div>
+  </div>
+</div>
+      
+    </div>
+        </div>
+
+        
+       
+        <div id="screen2" class="screen" style="display: none;">
+
+      <div class="heading"><h2>Menu</h2></div>
+      <div class="menu-container" id="menu-list">
+
+      
+        <div class="menu-item">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.NgXppeeT7A6iHrxvESE9RwHaHa&pid=Api&P=0&h=220" alt="img1">
+          <h3>Lemon Rice</h3>
+          <div class="item-details">
+              <div class="price">Rs.80</div>
+              <div><a href="#" class="add-btn">+</a></div>
+          </div>
+      </div>
+            
+        
+      
+      <div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.47qNztDdtWodO4SPk4-fKAHaE8&pid=Api&P=0&h=220" alt="img2">
+        <h3>Manchuria</h3>
+        <div class="item-details">
+            <div class="price">Rs.100</div>
+            <div><a href="#" class="add-btn">+</a></div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.vqJz6RMCDPKFWiwop-B4LAHaHa&pid=Api&P=0&h=220" alt="img3">
+      <h3>Curd Rice</h3>
+      <div class="item-details">
+          <div class="price">Rs.200</div>
+          <div><a href="#" class="add-btn">+</a></div>
+      </div>
+  </div>
+
+
+  <div class="menu-item">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.OZny5F6g0QAQPLsU_4HnEAHaE8&pid=Api&P=0&h=220" alt="img4">
+    <h3>Cheeseburger</h3>
+    <div class="item-details">
+        <div class="price">Rs.150</div>
+        <div><a href="#" class="add-btn">+</a></div>
+    </div>
+</div>
+
+
+<div class="menu-item">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.LUdVB3scfT1YPgs2vHchhQHaE8&pid=Api&P=0&h=220" alt="img5">
+  <h3>Chicken Biryani</h3>
+  <div class="item-details">
+      <div class="price">Rs.150</div>
+      <div><a href="#" class="add-btn">+</a></div>
+  </div>
+</div>
+      
+
+<div class="menu-item">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.xHv59Rk5PzRGoa1fT2-KOAHaEc&pid=Api&P=0&h=220" alt="img6">
+  <h3>Rasagulla</h3>
+  <div class="item-details">
+      <div class="price">Rs.150</div>
+      <div><a href="#" class="add-btn">+</a></div>
+  </div>
+</div>
+      
+    </div>
+     </div>
+     </div>
+
+    </div>
+      
+
+
+
+</section>
+
+  
+
+
+
+    <script src="index.js"></script>
+</body>
 </html>
